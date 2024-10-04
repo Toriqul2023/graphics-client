@@ -3,25 +3,100 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #ee0d0d;
+  --foreground: #32015C;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: white;
+    --foreground: black;
   }
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+
 }
 
+li{
+  color: white;
+  font-size:small;
+}
+h1,h2{
+  font-size: 60px;
+  line-height:62px ;
+
+  font-weight: 700;
+  color: black;
+ 
+  
+  
+}
+h3{
+  
+  color: #c179ff;
+  font-size: 18px;
+  font-weight: 500;
+}
+h4{
+  font-size: 20px;
+  font-weight: 500;
+  color: #32015c;
+ 
+}
+.quill{
+
+  height: 500px;
+}
+.ql-editor {
+  max-height: 800px; 
+  /* Set a maximum height to the editor */
+  overflow-y: auto;   /* Allow scrolling within the editor */
+}
+.ql-editor img {
+  max-width: 100%;   /* Ensures the image doesn't overflow the editor */
+  height: auto;      /* Maintains the aspect ratio */
+}
+p{
+  font-size: 16px;
+  color:black;
+  opacity: 0.9;
+  line-height: 30px;
+  word-spacing: normal;
+  text-align: justify;
+  font-weight: 500;
+}
+.button{
+  background-color: #00ADB5;
+  color:#EEEEEE;
+  padding: 10px 30px;
+  font-weight: 500;
+  border-color: #00ADB5;
+  border-radius: 5px;
+}
+.swiper-wrapper > .swiper-slide{
+  padding: 50px;
+  display: block;
+}
+ .swiper-button-prev::after{
+  color: red;
+  font-family: sans-serif;
+  content: "";
+  width: 40px;
+  height: 40px;
+  display: block;
+}
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  h1,h2{
+    font-size: 30px;
+    line-height:40px ;
   }
 }

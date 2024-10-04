@@ -1,0 +1,10 @@
+.hovers:hover{
+      background-color: aqua;
+      transition: 0.3s;
+}
+#box{
+    background-color: red;
+}
+.hovers:hover > .box{
+ background-color: aquamarine !important;
+}
